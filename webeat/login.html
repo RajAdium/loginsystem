@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: black;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      border: 4px solid white;
+      height: 400px;
+      width: 400px;
+      justify-content: center;
+      align-items: center;
+      margin: 200px auto;
+      padding: 15px;
+      background-color: white;
+    }
+
+    input {
+      padding: 6px;
+      margin: 10px;
+    }
+
+    .btn {
+
+      margin: 5px;
+      padding: 6px 67px;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="login.php" method="post">
+
+
+    <div class="container">
+      <h2>Please login</h2>
+
+      <input type="text" placeholder="Enter Username" name="uname" required class="input">
+      <input type="password" placeholder="Enter Password" name="psw" required class="input">
+
+      <button type="submit" class="btn">Login</button>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" class="input"> Remember me
+      </label>
+      <span class="psw"> <a href="#">Forgot password?</a></span>
+    </div>
+  </form>
+</body>
+
+</html>
